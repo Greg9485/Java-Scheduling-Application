@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="greg.boydston.scheduling.application.Controller.SearchAppointmentsController">
+   <children>
+      <Label layoutX="337.0" layoutY="6.0" text="Search Appointments" />
+      <TableView fx:id="viewAppointmentsHandler" layoutX="14.0" layoutY="33.0" prefHeight="200.0" prefWidth="759.0">
+        <columns>
+          <TableColumn id="AppointmentID" fx:id="AppointmentID" prefWidth="50.0" text="Appt ID" />
+            <TableColumn id="CustomerID" fx:id="CustomerID" minWidth="0.0" prefWidth="75.0" text="Customer ID" />
+            <TableColumn id="Title" fx:id="Title" prefWidth="43.0" text="Title" />
+            <TableColumn id="Contact" fx:id="Contact" prefWidth="56.0" text="Contact" />
+            <TableColumn id="Location" fx:id="Location" prefWidth="63.0" text="Location" />
+            <TableColumn id="Start" fx:id="Start" prefWidth="105.0" text="Start" />
+            <TableColumn id="End" fx:id="End" prefWidth="123.0" text="End" />
+            <TableColumn id="Type" fx:id="Type" prefWidth="66.0" text="Type" />
+            <TableColumn id="Description" fx:id="Description" prefWidth="177.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button id="CloseButton" fx:id="CloseButton" layoutX="702.0" layoutY="252.0" mnemonicParsing="false" onAction="#CloseButtonHandler" text="Close" />
+      <Button id="SearchButton" fx:id="SearchByMonthButton" layoutX="321.0" layoutY="252.0" mnemonicParsing="false" onAction="#SearchByMonthHandler" text="Search By Month" />
+      <TextField id="SearchText" fx:id="SearchText" layoutX="14.0" layoutY="252.0" prefHeight="25.0" prefWidth="287.0" promptText="Enter a Customer ID..." />
+      <Button id="SearchButton" fx:id="SearchByWeekButton" layoutX="435.0" layoutY="252.0" mnemonicParsing="false" onAction="#SearchByWeekHandler" text="Search By Week" />
+      <Button id="SearchButton" fx:id="ShowAllAppointments" layoutX="551.0" layoutY="252.0" mnemonicParsing="false" onAction="#ShowAllAppointmentsHandler" text="Show All Appointments" />
+      </children>
+</AnchorPane>

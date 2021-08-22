@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="295.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="greg.boydston.scheduling.application.Controller.ConsultantScheduleReportController">
+   <children>
+      <Label layoutX="310.0" layoutY="6.0" text="Contact Schedule Report" />
+      <TableView id="consultantScheduleTableView" fx:id="consultantScheduleTableView" layoutX="14.0" layoutY="31.0" prefHeight="200.0" prefWidth="740.0">
+         <columns>
+            <TableColumn id="AppointmentID" fx:id="AppointmentID" prefWidth="97.0" text="Appointment ID" />
+            <TableColumn id="CustomerID" fx:id="CustomerID" minWidth="0.0" prefWidth="91.0" text="Customer ID" />
+            <TableColumn id="Title" fx:id="Title" prefWidth="89.0" text="Title" />
+            <TableColumn id="Description" fx:id="Description" prefWidth="130.0" text="Description" />
+            <TableColumn id="AppointmentType" fx:id="AppointmentType" prefWidth="98.0" text="Type" />
+            <TableColumn id="Start" fx:id="Start" prefWidth="103.33331298828125" text="Start" />
+            <TableColumn id="End" fx:id="End" prefWidth="129.33331298828125" text="End" />
+         </columns>
+      </TableView>
+      <Button id="CloseButton" fx:id="CloseButton" layoutX="702.0" layoutY="252.0" mnemonicParsing="false" onAction="#CloseButtonHandler" text="Close" />
+      <ComboBox id="ContactCombo" fx:id="ContactCombo" layoutX="301.0" layoutY="240.0" onAction="#ContactComboHandler" prefWidth="150.0" promptText="Choose Contact..." />
+      
+   </children>
+</AnchorPane>
